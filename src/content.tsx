@@ -1,20 +1,21 @@
-import { CountButton } from "@/features/count-button"
-import cssText from "data-text:@/index.css"
-import type { PlasmoCSConfig } from "plasmo"
+import cssText from 'data-text:@/index.css'
+import type { PlasmoCSConfig } from 'plasmo'
+
+import { CountButton } from '@/features/count-button'
 
 export const config: PlasmoCSConfig = {
-  matches: ["https://www.google.com/*"]
+  matches: ['https://www.google.com/*'],
 }
 
 export const getStyle = () => {
-  const style = document.createElement("style")
+  const style = document.createElement('style')
   style.textContent = cssText
   return style
 }
 
 const PlasmoOverlay = () => {
   return (
-    <div className="z-50 flex fixed top-32 right-8">
+    <div className="fixed right-8 top-32 z-50 flex">
       <CountButton />
     </div>
   )
