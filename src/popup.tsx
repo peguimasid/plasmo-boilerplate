@@ -1,6 +1,6 @@
 import './index.css'
 
-import { CountButton } from '@/features/count-button'
+import { CountButton } from '@/components/count-button'
 
 function IndexPopup() {
   return (
