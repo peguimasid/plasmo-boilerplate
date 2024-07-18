@@ -17,7 +17,6 @@ const PlasmoOverlay = () => {
   return (
     <div className="fixed right-8 top-32 z-50 flex">
       <CountButton />
-      mading some changrs to see
     </div>
   )
 }
